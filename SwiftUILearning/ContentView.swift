@@ -9,16 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ScrollView {
+                Text("Content")
+                NavigationLink {
+                    NavigationStack {
+                        Text("This is new UI")
+                    }
+                } label: {
+                    Text("New UI")
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .border(.red)
+            .navigationTitle("Title")
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+
