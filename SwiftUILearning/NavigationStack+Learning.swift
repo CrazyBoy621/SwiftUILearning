@@ -201,6 +201,7 @@ struct ProfileView: View {
                 path.append(SettingsNavigation.theme)
             }
         }
+        .toolbarRole(.editor)
         .navigationTitle(user.name)
         .navigationBarTitleDisplayMode(.inline)
     }
