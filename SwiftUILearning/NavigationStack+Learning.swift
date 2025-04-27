@@ -173,7 +173,7 @@ struct SettingsView: View {
     @ViewBuilder func NavigationView(_ navigation: SettingsNavigation) -> some View {
         switch navigation {
         case .profile(let user):
-            ProfileView(user: user, path: $path)
+            ProfileView2(user: user, path: $path)
         case .theme:
             Text("Theme")
         }
@@ -190,7 +190,7 @@ struct User: Identifiable, Hashable {
     var name: String
 }
 
-struct ProfileView: View {
+struct ProfileView2: View {
     
     var user: User
     @Binding var path: NavigationPath

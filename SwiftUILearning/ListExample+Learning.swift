@@ -144,14 +144,11 @@ struct ListExample_Learning: View {
                 Button {
                     
                 } label: {
-                    Image(systemName: "pencil")
+                    Image(systemName: "pencil.circle.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 16, height: 16)
-                        .padding(6)
-                        .background(Color.blue)
-                        .clipShape(.circle)
-                        .foregroundStyle(Color.white)
+                        .frame(width: 28, height: 28)
+                        .foregroundStyle(Color.accentColor)
                 }
                 .buttonStyle(.plain)
             }
